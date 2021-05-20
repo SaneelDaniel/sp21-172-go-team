@@ -25,6 +25,7 @@ Team Members: - Martin Vladimirov - Maurice Washington - Saneel Daniel - Taarush
 
 ## { Cashiers App }
 
+In order to run the front end , first cd into frontend-final
 Front End managed by Martin Vladimirov, and backend managed by Taarush Vemulapalli
 
 ## { Online Store & Backoffice Help Desk }
