@@ -33,6 +33,11 @@ In order to run the front end , first type `cd final-frontend`.
 
 Run `npm install` and then `npm run start`
 
+Our online store displays a variety of different drink categories that users can browse.
+<img width="1373" alt="menu" src="https://user-images.githubusercontent.com/36089262/118932038-7179a900-b8fc-11eb-8ab0-568e2390747d.png">
+
+If a user makes a report, we can view them from our backoffice help desk and resolve issues that our users may have.
+<img width="1440" alt="adminreports" src="https://user-images.githubusercontent.com/36089262/118932044-73dc0300-b8fc-11eb-9877-587e6176b255.png">
 
 Front End managed by Martin Vladimirov, and backend managed by Saneel Daniel
 
