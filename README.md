@@ -25,6 +25,9 @@ Team Members: - Martin Vladimirov - Maurice Washington - Saneel Daniel - Taarush
 
 ## { Cashiers App }
 
+Once our user creates an order, they will be redirected to our cashiers page. This will display the Order ID number, different items, and the price.
+<img width="1417" alt="cashier" src="https://user-images.githubusercontent.com/36089262/118932759-40e63f00-b8fd-11eb-81b1-6363a038eed8.png">
+
 
 Front End managed by Martin Vladimirov, and backend managed by Taarush Vemulapalli
 
