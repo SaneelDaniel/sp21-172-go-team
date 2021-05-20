@@ -23,6 +23,34 @@ REQUIREMENTS:
 
 Team Members: - Martin Vladimirov - Maurice Washington - Saneel Daniel - Taarush Vemulapalli
 
+
+## Instructions:
+
+* Deployed instance (using Makefile + containerized stack): http://starbucks-go-team.netlify.app 
+
+* Locally:
+
+First, create a mysql environment: 
+
+`docker run -d --name mysql -td -p 3306:3306 -e MYSQL_ROOT_PASSWORD=cmpe172 mysql:8.0`
+
+Inside MySQL shell
+
+`mysql> create database starbucks;`
+`mysql> create user 'springuser'@'%' identified by 'SecretPW123';`
+`mysql> grant all on starbucks.* to 'springuser'@'%';` 
+
+Next, run the backend:
+`cd final-backend && ./gradlew bootRun`
+
+![bootRun](Images/bootRun.png)
+
+
+Finally, run the front-end:
+`cd final-frontend && npm install`
+`npm run start`
+
+
 ## { Cashiers App }
 
 Once our user creates an order, they will be redirected to our cashiers page. This will display the Order ID number, different items, and the price.
@@ -48,6 +76,25 @@ Front End managed by Martin Vladimirov, and backend managed by Saneel Daniel
 
 Design and Development to be done by Taarush Vemulapalli and Saneel Daniel
 
+* Handles user auth, payments, orders, and help tickets
+
+## { Cloud deployment }
+
+Design and Development to be done by Taarush Vemulapalli and Saneel Daniel
+
+* Front-end CI/CD - Netlify:
+
+`netlify.toml` defines the config (pointing to main repo)
+
+On commits, we see a build/deploy trigger:
+
+![netlify](Images/netlify.png)
+
+For our backend, see Makefile for our docker network/push commands, under `final-backend/Makefile`
+
+Backend is hosted as a container on DigitalOcean (we had issues with google cloud) using the above
+
+
 # Team Journal
 
 ## Week 1 (Project Kickoff) - (4/16/21 - 4/21/21)
@@ -58,3 +105,27 @@ Design and Development to be done by Taarush Vemulapalli and Saneel Daniel
 - We concluded the week with task allocations and reviewing the necessary starter codes and will be laying out a boilerplate up within the next couple of days.
 
 ![week1-taskboard](Images/week1-taskboard.png)
+
+## Week 2 
+
+- Divided the tasks and made our own branches to make progress
+- Scheduled weekly calls and deadlines for our internal goals
+
+![week2-taskboard](Images/week2-taskboard.png)
+
+## Week 3 
+
+- The team had meetings to discuss the requirements 
+- Completed REST endpoint (with postman tests)
+- Completed cashiers/help desk screens
+- Configured docker instances
+
+
+![week3-taskboard](Images/week3-taskboard.png)
+
+## Week 4
+
+-  Final front-end and back-end integration
+-  Cloud deployement and 
+
+![week4-taskboard](Images/week4-taskboard.png)
