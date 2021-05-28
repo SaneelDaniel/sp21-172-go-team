@@ -92,8 +92,6 @@ On commits, we see a build/deploy trigger:
 
 For our backend, see Makefile for our docker network/push commands, under `final-backend/Makefile`
 
-Backend is hosted as a container on DigitalOcean (we had issues with google cloud) using the above
-
 
 # Team Journal
 
