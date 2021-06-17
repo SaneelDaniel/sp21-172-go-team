@@ -26,8 +26,6 @@ Team Members: - Martin Vladimirov - Maurice Washington - Saneel Daniel - Taarush
 
 ## Instructions:
 
-* Deployed instance (using Makefile + containerized stack): http://starbucks-go-team.netlify.app 
-
 * Locally:
 
 First, create a mysql environment: 
